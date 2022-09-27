@@ -20,14 +20,12 @@ function destructivelyRemoveFirstCat(){
 
 
 function appendCat(catName){
-    const newCatsArray = [...cats];
-    newCatsArray.push(catName);
+    const newCatsArray = [...cats, catName];
     return newCatsArray;
 }
 
 function prependCat(catName){
-    const newCatsArray = [...cats];
-    newCatsArray.unshift(catName);
+    const newCatsArray = [catName,...cats];
     return newCatsArray;
 }
 
